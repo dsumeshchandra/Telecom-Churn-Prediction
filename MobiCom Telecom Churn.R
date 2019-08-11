@@ -933,23 +933,11 @@ mod4<-glm(formula = churn~.-dwllsize-proptype-occu1-ethnic-csa-cartype-crclscod-
          -iwylis_vce_Mean-callwait_Mean-crclscod1-adjmou-adjqty-mou_Mean, data=train,family = "binomial")
 summary(mod4)
 
-mod<-glm(formula = churn~.-dwllsize-proptype-occu1-ethnic-csa-cartype-crclscod-area-Customer_ID
-         -avg6qty-avg6mou-avg3mou-avg3qty-avgmou-avgqty-dwllsize1-proptype1
-         -occu1.1-opk_dat_Mean-recv_sms_Mean-blck_dat_Mean-mou_pead_Mean-drop_dat_Mean
-         -totmrc_Mean-da_Range-marital-hnd_webcap-refurb_new-rev_Range-drop_blk_Mean-
-           drop_vce_Range-owylis_vce_Range-ethnic1-csa1-cartype1-datovr_Mean-age2-
-           actvsubs-datovr_Range-car_buy-truck-mtrcycle-roam_Mean-forgntvl-models-
-           plcd_vce_Mean-mou_opkv_Range-income-totcalls-dwlltype-da_Mean-custcare_Mean-
-           callwait_Range-ovrrev_Mean-ccrndmou_Range-avgrev-totrev-adjrev-rev_Mean-area1
-         -iwylis_vce_Mean-callwait_Mean-crclscod1-adjmou-adjqty-mou_Mean, data=train,family = "binomial")
-summary(mod)
-vif(mod)
-
-mod1<-glm(formula = churn~mou_Range+change_mou+months+eqpdays+ovrmou_Mean+comp_vce_Mean+asl_flag
+mod5<-glm(formula = churn~mou_Range+change_mou+months+eqpdays+ovrmou_Mean+comp_vce_Mean+asl_flag
           +prizm_social_one+age1_1+hnd_price+uniqsubs+retdays+drop_vce_Mean+minpercall+billminadjpercall,
           data = train,family = "binomial")
-summary(mod1)
-vif(mod1)
+summary(mod5)
+vif(mod5)
 
 # Final Training Model
 
