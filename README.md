@@ -1,4 +1,4 @@
-R-Mobicom-Churn
+Mobicom Churn Prediction
 
 Company Information
 
